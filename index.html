@@ -7,26 +7,13 @@
   <link rel="stylesheet" href="sheet.css">
 </head>
 <body>
-    <div class="container">
-        <h1>To-Do List</h1>
-        <input type="text" id="taskInput" placeholder="Ajouter une nouvelle tâche..." />
-        <select id="prioritySelect">
-          <option value="low">Basse</option>
-          <option value="medium">Moyenne</option>
-          <option value="high">Haute</option>
-        </select>
-        <button onclick="addTask()">Ajouter</button>
-      
-        <!-- Options de filtrage -->
-        <div class="filters">
-          <button onclick="filterTasks('all')">Toutes</button>
-          <button onclick="filterTasks('completed')">Terminées</button>
-          <button onclick="filterTasks('incomplete')">Non Terminées</button>
-        </div>
-      
-        <ul id="taskList"></ul>
-      </div>
-      
+  <div class="container">
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Ajouter une nouvelle tâche..." />
+    <button onclick="addTask()">Ajouter</button>
+    <ul id="taskList"></ul>
+  </div>
+
   <script src="index.js"></script>
 </body>
 </html>
